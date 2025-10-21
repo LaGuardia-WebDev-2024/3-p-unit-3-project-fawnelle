@@ -27,24 +27,76 @@ Select ONE Additional Feature to Add
         p {color:rgb(133, 96, 96)}
         h1 {color:rgb(133, 111, 105)}
         h2 {color:rgb(189, 123, 123)}
+        .flip-card {
+  background-color: transparent;
+  width: 250px;
+ height: 500px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ffffff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #ffffff;
+  color: rgb(255, 224, 224);
+  transform: rotateY(180deg);
+}
+
   </style>
 </head>
 
 <body>
 
   <h1>janie's cutieful cafe</h1>
+<p>꒷꒦︶꒷꒦︶ ๋ ࣭ ⭑꒷꒦꒷꒦︶꒷꒦︶ ๋ ࣭ ⭑꒷꒦  ♡</p>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="IMG_0002.jpeg"  style="width:250px">
+    </div>
+    <div class="flip-card-back">      
+      <img src="IMG_0003.jpeg"  style="width:280px">
+</div>
+</div>
+</div>
+
+
 
   <h2>currency:</h2>
   <p>this cafe takes currency of hearts, "♡" since it's your first
     time here, <br>
      i'll give you 15 hearts to spend ! enjoy 
-  </p>
 
   <ol>
     <li><a href="?">drink menu</a></li>
   </ol>
 <p>
-  <h2 id="?">drink menu</h2>
+  <h2 id="?">drink menu ₊˚⊹♡</h2>
   <p> our lattes can have flavored syrup added, <br>
      such as mocha, vanilla, and a seasonal favorite: pumpkin !</p>
    <table>
@@ -86,11 +138,12 @@ Select ONE Additional Feature to Add
       </tr>
     </tbody>
    </table>
-   <h2>bites</h2>
+   <h2>food menu ₊˚⊹♡</h2>
+   <p> add a side of fries of choice of soup ( tomato, chicken noodle) for an extra "♡"</p>
  <table>
     <thead>
       <tr>
-        <th>drinks</th>
+        <th>bites</th>
         <th>-`♡´-</th>
         <th>price</th>
       </tr>
@@ -99,35 +152,37 @@ Select ONE Additional Feature to Add
       <tr>
         <td>ham & swiss croissant</td>
         <td>ham & swiss melted <br> in a butter croissant</td>
-        <td>♡♡</td>
+        <td>♡♡♡♡</td>
       </tr>
        <tr>
-        <td>choco milkshake</td>
-        <td>7/10</td>
-        <td>♡♡</td>
+        <td>chicken caesar wrap</td>
+        <td>chicken, salad, caesar  dressing & croutons 
+          <br>in a tortilla wrap</td>
+        <td>♡♡♡♡</td>
       </tr>
        </tr>
        <tr>
-        <td>strawberry milkshake</td>
-        <td>7/10</td>
-        <td>♡♡</td>
+        <td>grilled cheese</td>
+        <td>melty classic grilled four cheese sandwhich</td>
+        <td>♡♡♡♡</td>
       </tr> 
     </tr>
        <tr>
-        <td>hot latte</td>
-        <td>6/10</td>
-        <td>♡♡</td>
+        <td>chicken & fries</td>
+        <td>crispy chicken with seasoned fries</td>
+        <td>♡♡♡♡</td>
       </tr>
        </tr>
        <tr>
-        <td>iced latte</td>
-        <td>6/10</td>
-        <td>♡♡</td>
+        <td>breakfast sandwhich</td>
+        <td>eggs, cheese, bacon & hashbrown sandwhich</td>
+        <td>♡♡♡♡</td>
       </tr>
     </tbody>
    </table>
 
   <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+
 
 </body>
 
