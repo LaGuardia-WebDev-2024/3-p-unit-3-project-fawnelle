@@ -23,13 +23,16 @@ Select ONE Additional Feature to Add
           table, th, td
            { border: 2px solid #ffbcbc;
           border-radius:7px;
+          background-color:rgb(255, 246, 235)
+          
         }
         p {color:rgb(133, 96, 96)}
         h1 {color:rgb(133, 111, 105)}
         h2 {color:rgb(189, 123, 123)}
+       body {background-color: rgb(255, 255, 255);}
         .flip-card {
   background-color: transparent;
-  width: 250px;
+  width: 270px;
  height: 500px;
   perspective: 1000px;
 }
@@ -37,7 +40,7 @@ Select ONE Additional Feature to Add
 .flip-card-inner {
   position: relative;
   width: 50%;
-  height: 100%;
+  height: 80%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -50,7 +53,7 @@ Select ONE Additional Feature to Add
 
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -66,7 +69,7 @@ Select ONE Additional Feature to Add
   color: rgb(255, 224, 224);
   transform: rotateY(180deg);
 }
-
+center{margin-left: -180px;}
   </style>
 </head>
 
@@ -74,30 +77,32 @@ Select ONE Additional Feature to Add
 
   <h1 align="center">
 JANIE'S CUTIEFUL CAFE</h1>
+<center>
   <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="IMG_0002.jpeg"  style="width:250px">
+      <img src="IMG_0002.jpeg"  style="width:270px">
     </div>
     <div class="flip-card-back">      
       <img src="IMG_0003.jpeg"  style="width:280px">
 </div>
 </div>
 </div>
-
+</center>
 
 <h1 align="center">꒷꒦︶꒷꒦︶ ๋ ࣭ ♡ ꒷꒦꒷꒦︶꒷꒦︶ ๋ ࣭ ꒷꒦  ♡</h1>
-  <h2>CURRENCY:</h2>
-  <p>this cafe takes currency of hearts, "♡" since it's your first
+  <h2 align="center">CURRENCY:</h2>
+  <p align="center">this cafe takes currency of hearts, "♡" since it's your first
     time here, <br>
      i'll give you 15 hearts to spend ! enjoy 
 
-  <ol>
-    <li><a href="?">drink menu</a></li>
-  </ol>
+     <ul>
+    <li><a href="#DRINKMENU">DRINK MENU</a></li>
+    <li><a href="#FOODMENU">FOOD MENU</a></li>
+
 <p>
-  <h2 id="?">DRINK MENU ₊˚⊹♡</h2>
-  <p> our lattes can have flavored syrup added, <br>
+  <h2 id="#DRINKMENU" align="center"> DRINK MENU </h2>
+  <p align="center">our lattes can have flavored syrup added, <br>
      such as mocha, vanilla, and a seasonal favorite: pumpkin !</p>
    <table align="center" >
     <thead>
@@ -138,8 +143,8 @@ JANIE'S CUTIEFUL CAFE</h1>
       </tr>
     </tbody>
    </table>
-   <h2>FOOD MENU ₊˚⊹♡</h2>
-   <p> add a side of fries of choice of soup ( tomato, chicken noodle) for an extra "♡"</p>
+   <h2 id="#FOODMENU"align="center"> FOOD MENU </h2>
+   <p align="center"> add a side of fries of choice of soup ( tomato, chicken noodle) for an extra "♡"</p>
  <table align="center">
     <thead>
       <tr>
@@ -180,8 +185,8 @@ JANIE'S CUTIEFUL CAFE</h1>
       </tr>
       </tr>
        <tr>
-        <td>breakfast sandwhich</td>
-        <td>eggs, cheese, bacon & hashbrown sandwhich</td>
+        <td>apple crisp salad</td>
+        <td>sweet apples, dried fruit, cheese, & nuts</td>
         <td>♡♡♡♡</td>
       </tr>
     </tbody>
